@@ -20,4 +20,13 @@ export class HeroComponent {
   changeName(): void {
     this.name = 'Spiderman';
   }
+
+  changeEdad(): void {
+    this.age = 23;
+  }
+
+  reset(): void {
+    this.name = 'IronMan';
+    this.age = 45;
+  }
 }

@@ -13,11 +13,20 @@
     <td><b>Capitalizado:</b> {{ capitalizeName }}</td>
   </tr>
   <div class="my-3">
-    <button class="btn btn-primary me-3" (click)="changeName()">
+    <button
+      *ngIf="name === 'IronMan'"
+      class="btn btn-primary me-3"
+      (click)="changeName()"
+    >
       Cambiar nombre
     </button>
-
-    <button class="btn btn-primary me-3">Cambiar edad</button>
-    <button class="btn btn-primary">Reset</button>
+    <button
+      *ngIf="age === 45"
+      class="btn btn-primary me-3"
+      (click)="changeEdad()"
+    >
+      Cambiar edad
+    </button>
+    <button class="btn btn-primary" (click)="reset()">Reset</button>
   </div>
 </table>

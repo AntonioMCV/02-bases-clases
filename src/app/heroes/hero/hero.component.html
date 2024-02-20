@@ -1,1 +1,23 @@
-<p>hero works!</p>
+<h1>{{ name }}</h1>
+<table class="my-3">
+  <tr>
+    <td><b>Nombre:</b> {{ name }}</td>
+  </tr>
+  <tr>
+    <td><b>Edad:</b> {{ age }}</td>
+  </tr>
+  <tr>
+    <td><b>Metodo:</b> {{ getHeroDescription() }}</td>
+  </tr>
+  <tr>
+    <td><b>Capitalizado:</b> {{ capitalizeName }}</td>
+  </tr>
+  <div class="my-3">
+    <button class="btn btn-primary me-3" (click)="changeName()">
+      Cambiar nombre
+    </button>
+
+    <button class="btn btn-primary me-3">Cambiar edad</button>
+    <button class="btn btn-primary">Reset</button>
+  </div>
+</table>

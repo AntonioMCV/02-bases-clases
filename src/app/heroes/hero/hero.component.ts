@@ -5,4 +5,19 @@ import { Component } from '@angular/core';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css',
 })
-export class HeroComponent {}
+export class HeroComponent {
+  name: string = 'IronMan';
+  age: number = 45;
+
+  get capitalizeName(): string {
+    return this.name.toLocaleUpperCase();
+  }
+
+  getHeroDescription(): string {
+    return `${this.name} - ${this.age}`;
+  }
+
+  changeName(): void {
+    this.name = 'Spiderman';
+  }
+}

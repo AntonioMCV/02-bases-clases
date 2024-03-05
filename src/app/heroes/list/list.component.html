@@ -1,1 +1,15 @@
-<p>list works!</p>
+<h1>Listado heroes</h1>
+<hr />
+<div>
+  <h3>
+    Heroe borrado <span class="text-danger">{{ heroDeleted }}</span>
+  </h3>
+</div>
+<ul class="list-group my-3">
+  <li *ngFor="let name of heroNames" class="list-group-item">
+    {{ name }}
+  </li>
+</ul>
+<button (click)="deleteLastHero()" class="btn btn-danger">
+  Borrar ultimo Heroe
+</button>

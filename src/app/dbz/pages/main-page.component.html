@@ -4,15 +4,10 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <app-list></app-list>
+      <dbz-list [characterList]="characters"></dbz-list>
     </div>
     <div class="col">
-      <h2>Agregar Personaje</h2>
-      <form action="" class="row">
-        <input type="text" class="form-control mb-2" placeholder="Nombre" />
-        <input type="number" class="form-control mb-2" placeholder="Poder" />
-        <button type="submit" class="btn btn-primary">Agregar</button>
-      </form>
+      <dbz-add-character></dbz-add-character>
     </div>
   </div>
   <img

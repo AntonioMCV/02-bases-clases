@@ -6,9 +6,4 @@ import { Character } from '../../interfaces/characters';
   templateUrl: './add-character.component.html',
   styleUrl: './add-character.component.css',
 })
-export class AddCharacterComponent {
-  public character: Character = {
-    name: '',
-    power: 0,
-  };
-}
+export class AddCharacterComponent {}

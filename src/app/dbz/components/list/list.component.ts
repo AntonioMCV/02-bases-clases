@@ -14,4 +14,9 @@ export class ListComponent {
       power: 9000,
     },
   ];
+
+  //reconger el indice y mostrarlo en consola
+  onDeleteCharacter(index) {
+    console.log(index);
+  }
 }

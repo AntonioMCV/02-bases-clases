@@ -25,4 +25,10 @@ export class MainPage {
       power: 7000,
     },
   ];
+
+  onNewCharacter(character: Character): void {
+    console.log('MainPage');
+    console.log(character);
+    this.characters.push(character);
+  }
 }

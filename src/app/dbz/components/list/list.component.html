@@ -15,6 +15,6 @@
   >
     {{ i + 1 }} - {{ character.name }} : {{ character.power }}
     <!-- poner el evento click -->
-    <button class="btn btn-danger">X</button>
+    <button class="btn btn-danger" (click)="onDeleteCharacter(i)">X</button>
   </li>
 </ul>

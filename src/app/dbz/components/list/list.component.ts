@@ -15,8 +15,12 @@ export class ListComponent {
     },
   ];
 
-  //reconger el indice y mostrarlo en consola
-  onDeleteCharacter(index) {
+  //Tarea emitir el indice al padre con @output y EvenEmitter
+  //la propiedad nueva se llamará positionToDelete
+  //consular addCharacter para dudas
+  //emitir la propiedad "postitionToDelete" desde el metodo onDeleteCharacter
+  //recibiré el evento del hijo que dispará un metodo nuevo de la clase mainPage "onDeleteCharacter"
+  onDeleteCharacter(index: number) {
     console.log(index);
   }
 }

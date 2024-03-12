@@ -13,9 +13,5 @@ export class ListComponent {
       name: 'Gocku',
       power: 9000,
     },
-    {
-      name: 'Vegeta',
-      power: 8000,
-    },
   ];
 }

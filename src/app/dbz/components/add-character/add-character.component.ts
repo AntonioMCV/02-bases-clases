@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Character } from '../../interfaces/characters';
 
 @Component({
   selector: 'dbz-add-character',

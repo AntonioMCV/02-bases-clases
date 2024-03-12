@@ -4,6 +4,7 @@ import { Character } from '../interfaces/characters';
 @Component({
   selector: 'dbz-main-page',
   templateUrl: 'main-page.component.html',
+  styles: 'img { max-width: 100% }',
 })
 export class MainPage {
   public characters: Array<Character> = [

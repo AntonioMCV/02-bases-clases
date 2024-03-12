@@ -5,7 +5,10 @@
   <div class="row">
     <div class="col">
       <!-- recibiré el evento del hijo que dispará un metodo nuevo "onDeleteCharacter"  -->
-      <dbz-list [characterList]="characters"></dbz-list>
+      <dbz-list
+        (positionToDelete)="onDeleteCharacter($event)"
+        [characterList]="characters"
+      ></dbz-list>
     </div>
     <div class="col">
       <dbz-add-character

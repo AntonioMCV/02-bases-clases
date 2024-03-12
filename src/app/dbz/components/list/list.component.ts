@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Character } from '../../interfaces/characters';
 
 @Component({
@@ -15,6 +15,9 @@ export class ListComponent {
     },
   ];
 
+  @Output()
+  public positionToDelete: EventEmitter<number> = new EventEmitter();
+
   //Tarea emitir el indice al padre con @output y EvenEmitter
   //la propiedad nueva se llamará positionToDelete
   //consular addCharacter para dudas
@@ -23,5 +26,6 @@ export class ListComponent {
   //Que me monstrara el console.log con la posicion
   onDeleteCharacter(index: number) {
     console.log(index);
+    this.positionToDelete.emit(index);
   }
 }

@@ -20,6 +20,7 @@ export class ListComponent {
   //consular addCharacter para dudas
   //emitir la propiedad "postitionToDelete" desde el metodo onDeleteCharacter
   //recibiré el evento del hijo que dispará un metodo nuevo de la clase mainPage "onDeleteCharacter"
+  //Que me monstrara el console.log con la posicion
   onDeleteCharacter(index: number) {
     console.log(index);
   }

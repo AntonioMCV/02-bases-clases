@@ -16,7 +16,7 @@ export class ListComponent {
   ];
 
   @Output()
-  public positionToDelete: EventEmitter<number> = new EventEmitter();
+  public positionToDelete: EventEmitter<string> = new EventEmitter();
 
   //Tarea emitir el indice al padre con @output y EvenEmitter
   //la propiedad nueva se llamará positionToDelete
@@ -24,8 +24,8 @@ export class ListComponent {
   //emitir la propiedad "postitionToDelete" desde el metodo onDeleteCharacter
   //recibiré el evento del hijo que dispará un metodo nuevo de la clase mainPage "onDeleteCharacter"
   //Que me monstrara el console.log con la posicion
-  onDeleteCharacter(index: number) {
-    console.log(index);
-    this.positionToDelete.emit(index);
+  onDeleteCharacter(id: string) {
+    console.log(id);
+    this.positionToDelete.emit(id);
   }
 }

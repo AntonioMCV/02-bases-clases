@@ -14,8 +14,8 @@ export class MainPage {
     return [...this.dbzService.characters];
   }
 
-  onDeleteCharacter(index: number) {
-    this.dbzService.onDeleteCharacter(index);
+  onDeleteCharacter(id: string) {
+    this.dbzService.onDeleteCharacter(id);
   }
 
   onNewCharacter(character: Character) {
